@@ -56,7 +56,7 @@
 \graphicspath{ }
 
 
-\title{Parameters of Hecke algebras for p-adic groups}
+\title{Hecke algebras for p-adic groups}
 \author{Albert Lopez Bruch}
 %\institute{LSGNT}
 \date{5 September, 2025}
@@ -185,6 +185,31 @@
     \textbf{Open problem:} Determine the parameter function $q:S(\rho)_{\aff}\rightarrow\QQ_{>1}$ in the modular representation setting. 
 \end{frame}
 
+\iffalse
+\begin{frame}
+    \frametitle{Unramified Langlands correspondence for $\SL_n(F)$}
+    For simplicity, we assume now that $G=\SL_n(F)$.
+    The work of Kazhdan--Lusztig and Reeder gives a complete classification of the irreducible modules of $\cH_n=\cH(\SL_n(F),I,\textbf{1})=C_c(I\backslash\SL_n(F)/I)$:
+    \begin{itemize}
+        \item For each $x\in\PGL_n(\CC)=G^\vee(\CC)$, we construct a canonical representation $V_x$ of $\cH_n$ using Borel--Moore homology.
+        \item All irreducible $\cH_n$-modules are parametrized by pairs $(x,\phi)$ up to $G^\vee$-conjugacy, where $\phi$ is a character of $Z_{G^\vee}(x)/Z_{G^\vee}(x)^0$, and $\pi(x,\phi)$ is an irreducible subquotient of $V_x$.
+        \item The set $G^\vee\backslash\{(x,\phi)\}$ can easily be seen to be in correspondence with \textbf{enhanced} Langlands parameters $(\varphi,\phi)$, $\varphi:W_F\times\SL_2(\CC)\rightarrow G^\vee$
+    \end{itemize}
+\end{frame}
+\fi
+
+\begin{frame}
+    \frametitle{Unramified Langlands correspondence for $\GL_n(F)$}
+    For simplicity, we assume now that $G=\GL_n(F)$.
+    The work of Kazhdan--Lusztig gives a complete classification of the irreducible modules of $\cH_n=\cH(\GL_n(F),I,\textbf{1})=C_c(I\backslash\GL_n(F)/I)$:
+    \begin{itemize}
+        \item For each $x\in\GL_n(\CC)=G^\vee(\CC)$, we construct a canonical $\cH_n$-representation $V_x$ using Borel--Moore homology.
+        \item This representation has one unique irreducible subquotient, say $\pi_x$, depending only on the conjugacy class of $x\in\GL_n(\CC)$. 
+        \item All irreducible $\cH_n$-modules arise this way.
+        \item Conjugacy classes of $\GL_n(\CC)$ are in bijection with unramified Langlands parameters $\varphi:W_F\times\SL_2(\CC)\rightarrow\GL_n(\CC)$ (trivial on $\mathcal{I}_F\times\{1\})$ up to $\GL_n(\CC)$-conjugacy. 
+    \end{itemize}
+    This is precisely the statement of the Unramified LLC for $\GL_n(F)$!
+\end{frame}
 
 
 \begin{frame}
